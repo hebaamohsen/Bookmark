@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="img/bookmark-solid.svg">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="title">
+            <h1 class="text-center mt-5 display-4">Bookmarker</h1>
+        </div>
+        <div class="bordr mt-5"></div>
+        <div class="title2 d-flex justify-content-center mt-4">
+            <i class="fa-solid fa-bookmark me-1 fs-3" style="color: #2c8e25;"></i>
+            <h2><span class="color2">Book</span> <span class="color3">mark</span> <span class="color4">your</span> <span class="diffColor2"> favor</span><span class="diffColor"><span class="colorDiff">ite</span> sites</span> </h2>
+            <span class="icon"><i class="fa-solid fa-bookmark ms-1 fs-3"></i></span>
+        </div>
+        <div class="form mt-4">
+            <i class="fa-solid fa-book-bookmark me-1"></i>
+            <label for="SiteName">Site Name</label>
+            <input type="text" id="SiteName" class="form-control mb-4" placeholder="Bookmark Name" />
+            <i class="fa-solid fa-link me-1"></i>
+            <label for="SiteURL">Site URL</label>
+            <input type="text" id="SiteURL" class="form-control mb-3" placeholder="Website URL" />
+            <p class="invalid d-none alert alert-danger" id="invalid">Enter a valid url</p>
+            <p class="invalid d-none alert alert-danger" id="rules">Url should be start with http or https and www and should be contain .com</p>
+            <div class="button d-flex justify-content-center mt-3">
+                <button class="btn px-5 submit d-block" id="addBook">Submit</button>
+            </div>
+            <div class="mt-5">
+                <input onkeyup="searchBoomark()" type="text" id="search" class="form-control mb-4" placeholder="Search..." />
+            </div>
+            
+        </div>
+        <div class="bordr mt-4"></div>
+        <div>
+            <table class="table mt-4 text-center">
+                <thead>
+                
+                    <th >Index</th>
+                    <th >Website Name</th>
+                    <th >Visit</th>
+                    <th >Update</th>
+                    <th >Delete</th>
+            </thead>
+            <tbody id="tableBody">
+              
+           
+            </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

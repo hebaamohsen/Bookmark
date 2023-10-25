@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap');
+body{
+    background-color:#F7ECDE;
+}
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+h1{
+   font-family: 'Pacifico', cursive;
+   position: relative;
+}
+h1::before{
+    content: "";
+    border: 1px solid #FEC260;
+    background-color: #FEC260;
+    position: absolute;
+    width: 27%;
+    height: 33%;
+    bottom: 0;
+    left: 42;
+    z-index: -1;
+    transition: height 350ms;
+}
+ h1:hover::before{
+   height: 66%;
+}
+.bordr{
+    border: 1px dashed black;
+}
+.icon{
+    color:#B2AB49 ;
+}
+.title2 h2{
+    color: #2c8e25;
+    font-size: 25px;
+    font-family: 'Righteous', cursive;
+}
+.diffColor{
+    color:#B2AB49 ;
+}
+.diffColor2{
+    color:#7EA951 ;
+}
+.colorDiff{
+    color:#93AA4E ;
+}
+.color2{
+    color: #48A55A;
+}
+.color3{
+    color: #59A757;
+}
+.color4{
+    color:#6EA854 ;
+}
+label{
+    font-family: 'Righteous', cursive;
+}
+input[type=text]:focus {
+    box-shadow: 0 0 5px 5px #f1cf9c;
+    border: 1px solid #D99C39;
+}
+.submit{
+    background-color:#D1512A ;
+    color: white;
+}
+.submit:hover{
+    background-color: #BB4120;
+    color: white;
+}
+.sub{
+   background-color: #9eb23b; 
+   color: white;
+}
+.sub:hover{
+    background-color: #8A9E23;
+    color: white;
+}
+.delete{
+    background-color:#eb1d36 ;
+    color: white;
+}
+.delete:hover{
+    background-color:#D30820 ;
+    color: white;
+}
+.update{
+    background-color:#D99C39 ;
+    color: white;
+}
+.update:hover{
+    background-color:darkorange ;
+    color: white;
+}
+.invalid{
+    color: red;
+}
+mark{
+    background-color: #FEC260;
+}
+@media screen and (max-width:1199px) {
+    h1::before{
+        width: 32%;
+    }
+    
+}
+@media screen and (max-width:1125px) {
+    h1::before{
+        width: 30%;
+    }
+    
+}
+@media screen and (max-width:1000px) {
+    h1::before{
+        width: 29%;
+    }
+    
+}
+@media screen and (max-width:991px) {
+    h1::before{
+        width: 40%;
+    }
+    
+}
+@media screen and (max-width:960px) {
+    h1::before{
+        width: 38%;
+    }
+    
+}
+@media screen and (max-width:870px) {
+    h1::before{
+        width: 36%;
+    }
+    
+}
+@media screen and (max-width:778px) {
+    h1::before{
+        width: 35%;
+    }
+    
+}
+@media screen and (max-width:767px) {
+    h1::before{
+        width: 46%;
+    }
+    
+}
+@media screen and (max-width:680px) {
+    h1::before{
+        width: 43%;
+    }
+    
+}
+@media screen and (max-width:630px) {
+    h1::before{
+        width: 42%;
+    }
+    
+}
